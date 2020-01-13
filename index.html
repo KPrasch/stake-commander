@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stake Commander</title>
+    <link rel="stylesheet" href="tvision.css" />
+    <script src="jquery.min.js"></script>
+    <script src="web3.min.js"></script>
+    <script src="abis.js"></script>
+    <script src="common.js"></script>
+  </head>
+  <body>
+    <div class="top-menu-bar">
+      <a href="index.html" class="selected">Stake</a>
+      <a href="#">Set worker</a>
+      <a href="#">Detach worker</a>
+      <a href="#">Withdraw</a>
+    </div>
+    <div id="screen">
+        <div class="blue window">
+            <h1>Stake Commander</h1>
+        </div>
+
+        <div class="window white stake">
+            <fieldset class="params">
+                <legend>Staking with account <span id="staking-account">0xdeadbeef</span></legend>
+                <ul>
+                    <li>
+                        <label for="stake-value">Stake value (NU)</label>
+                        <input type="text" id="stake-value" name="stake-value" value="idk">
+                    </li>
+                    <li>
+                        <label for="stake-duration">Stake duration (days)</label>
+                        <input type="text" id="stake-duration" name="stake-duration" value="30">
+                    </li>
+                </ul>
+            </fieldset>
+            <ul>
+                <li>
+                    <input id="restake" type="checkbox" name="restake" checked>
+                    <label for="restake">Automatically restake all compensation for staking</label>
+                </li>
+            </ul>
+
+            <p style="text-align: center">
+                <button id="do-stake">Stake it</button>
+            </p>
+        </div>
+    </div>
+  </body>
+</html>

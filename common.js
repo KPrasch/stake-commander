@@ -27,6 +27,7 @@ async function handle_stake() {
     var default_account = (await web3.eth.getAccounts())[0];
     var balance = $('#stake-value').val();
     var duration = parseInt($('#stake-duration').val());
+    console.log(duration);
     balance = (BigInt(parseFloat(balance) * 1000) *
                BigInt('1000000000000000000') / BigInt('1000')).toString();  // how to do this shit better??
 

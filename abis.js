@@ -1,4 +1,4 @@
-var staking_escrow_address = "0xeEB9a5d5970A5f06Bcb0D5C0E42d4EFD5D2B8Fdb";
+var staking_escrow_address = "0xD37d65e1a27839C98B784fcBfC7A32cd6E7cE42F";
 var token_address = "0xa6596Ba202f456c87aD4C745c6A35600A7fC83F9";
 
 var token_abi = [
